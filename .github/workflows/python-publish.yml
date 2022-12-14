@@ -34,4 +34,5 @@ jobs:
       env:
         TWINE_USER: __token__
         TWINE_PASSWORD: ${{ secrets.SECRET_TOKEN }}
-      run: twine upload --repository-url=https://test.pypi.org/legacy/ dist/*
+      run: |
+        twine upload --repository-url=https://test.pypi.org/legacy/ dist/*
