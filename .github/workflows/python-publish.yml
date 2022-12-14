@@ -33,7 +33,7 @@ jobs:
       run: python -m build
     - name: Publish package
       env:
-        TWINE_USER: __token__
+        TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.SECRET_TOKEN }}
       run: |
         twine upload --repository-url=https://test.pypi.org/legacy/ dist/*
