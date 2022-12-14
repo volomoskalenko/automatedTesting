@@ -1,10 +1,11 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "titanic_utils_unique_volomos"
-version = "0.0.3"
+dynamic = ["version"]
+
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -24,3 +25,6 @@ dependencies=[
 [project.urls]
 "Homepage" = "https://github.com/nickdelgrosso/automatedTesting"
 "Bug Tracker" = "https://github.com/nickdelgrosso/automatedTesting/issues"
+
+[tool.setuptools_scm]
+write_to = "titanic_utils_unique_volomos/_version.py"
