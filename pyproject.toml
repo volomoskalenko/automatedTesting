@@ -27,4 +27,4 @@ dependencies=[
 "Bug Tracker" = "https://github.com/nickdelgrosso/automatedTesting/issues"
 
 [tool.setuptools_scm]
-write_to = "titanic_utils_unique_volomos/_version.py"
+write_to = "titanic_utils/_version.py"
