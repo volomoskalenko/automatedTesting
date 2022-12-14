@@ -27,4 +27,5 @@ dependencies=[
 "Bug Tracker" = "https://github.com/nickdelgrosso/automatedTesting/issues"
 
 [tool.setuptools_scm]
+local_scheme = "no-local-version"
 write_to = "titanic_utils/_version.py"
